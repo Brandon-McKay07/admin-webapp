@@ -27,11 +27,11 @@
             "styles": [
               
               "src/styles.css",
-              "admin-webapp/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "/Users/brandonmckay/FrontEndWorkspace/admin-webapp/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "admin-webapp/node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "admin-webapp/node_modules/jquery/dist/jquery.min.js"
+              "/Users/brandonmckay/FrontEndWorkspace/admin-webapp/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "/Users/brandonmckay/FrontEndWorkspace/admin-webapp/node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
