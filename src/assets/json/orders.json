@@ -1,0 +1,77 @@
+[
+    {
+      "orderId": 3456789345,
+      "orderDate": "03 December 2021",
+      "orderStatus": "Pending",
+      "products": [
+        {
+          "productId": 1,
+          "productCode": "PRD-ELE-1054",
+          "productImg": "https://m.media-amazon.com/images/I/711WeAkyhCL._AC_SL1500_.jpg",
+          "productTitle": "Holy Stone HS440 Foldable FPV Drone",
+          "productDescription": "1080P WiFi Camera for Adult Beginners and Kids; Voice/Gesture Control ",
+          "productCategory": "Electronics",
+          "price": 300,
+          "quantity": 4,
+          "totalPrice": 1200
+        }
+      ],
+      "totalItems": 3,
+      "itemsSubTotal": 1200,
+      "shipmentCharges": 100,
+      "totalAmount": 1300,
+      "paymentStatus": 0,
+      "paymentStatusTile": "Paid",
+      "paymentMethod": 0,
+      "paymentMethodTitle": "Debit",
+  
+      "userId": 1,
+      "name": "Bryan McKay",
+      "email" : "bryan.mckay@gmail.com",
+      "contact": "3431434",
+      "address": "333 Supreme St SW"
+    },
+    {
+        "orderId": 3111789345,
+        "orderDate": "05 April 2022",
+        "orderStatus": "Confirm",
+        "products": [
+          {
+            "productId": 1,
+            "productCode": "PRD-ELE-1054",
+            "productImg": "https://m.media-amazon.com/images/I/61JWmBV95jL._AC_SL1500_.jpg",
+            "productTitle": "Google Pixel Buds Pro ",
+            "productDescription": "Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case",
+            "productCategory": "Electronics",
+            "price": 149,
+            "quantity": 4,
+            "totalPrice": 596
+          },
+          {
+            "productId": 2,
+            "productCode": "PRD-ELE-1054",
+            "productImg": "https://m.media-amazon.com/images/I/81Y5WuARqpS._AC_SL1500_.jpg",
+            "productTitle": "2021 Apple 11-inch iPad Pro",
+            "productDescription": "Space Gray",
+            "productCategory": "Electronics",
+            "price": 769,
+            "quantity": 4,
+            "totalPrice": 3076
+          }
+        ],
+        "totalItems": 8,
+        "itemsSubTotal": 4268,
+        "shipmentCharges": 100,
+        "totalAmount": 4238,
+        "paymentStatus": 0,
+        "paymentStatusTile": "Paid",
+        "paymentMethod": 0,
+        "paymentMethodTitle": "Debit",
+    
+        "userId": 1,
+        "name": "Brandon McKay",
+        "email" : "brandon.mckay@gmail.com",
+        "contact": "3228434",
+        "address": "301 This is the way"
+      }
+  ]

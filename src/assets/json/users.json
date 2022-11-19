@@ -5,14 +5,14 @@
         "fullName":"John McKay",
         "address" :{
             "street":"34 Wakanda Way",
-            "city":"Chula Vista",
+            "city":"San Diego",
             "state": "California",
             "country":"US",
             "pincode": 1400022
         },
         "email":"john.mckay@gmail.com",
         "img":"",
-        "contact":"9849485545"
+        "contact":"9849485"
     }, 
     {
         "userId":2,
@@ -20,14 +20,14 @@
         "fullName":"Kristina McKay",
         "address" :{
             "street":"34 Wakanda Way",
-            "city":"Chula Vista",
+            "city":"San Diego",
             "state": "California",
             "country":"US",
             "pincode": 5566022
         },
         "email":"kristina.mckay@gmail.com",
         "img":"",
-        "contact":"42343434545"
+        "contact":"4234343"
     }, 
     {
         "userId":3,
@@ -42,7 +42,7 @@
         },
         "email":"brandon.mckay@gmail.com",
         "img":"",
-        "contact":"3228434545"
+        "contact":"3228434"
     },{
         "userId":4,
         "username":"Alex",
@@ -56,34 +56,34 @@
         },
         "email":"alex.mckay.ali@gmail.com",
         "img":"",
-        "contact":"228434545"
+        "contact":"2284345"
     },{
         "userId":5,
         "username":"Bryan",
         "fullName":"Bryan McKay",
         "address" :{
             "street":"333 Supreme St SW",
-            "city":"Seattle",
+            "city":"Gotham",
             "state": "WA",
             "country":"US",
-            "pincode": 8566022
+            "pincode": 6563322323
         },
         "email":"bryan.mckay@gmail.com",
         "img":"",
-        "contact":"3431434545"
+        "contact":"3431434"
     },{
         "userId":6,
         "username":"Zain",
         "fullName":"Zain Ali",
         "address" :{
             "street":"703 Wonderland Way",
-            "city":"Seattle",
+            "city":"Miami",
             "state": "WA",
             "country":"US",
-            "pincode": 8566022
+            "pincode": 2563222234
         },
         "email":"zain.ali@gmail.com",
         "img":"",
-        "contact":"2141843454"
+        "contact":"2141843"
     }
 ]
