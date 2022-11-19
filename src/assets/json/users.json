@@ -1,0 +1,89 @@
+[
+    {
+        "userId":1,
+        "username":"John",
+        "fullName":"John McKay",
+        "address" :{
+            "street":"34 Wakanda Way",
+            "city":"Chula Vista",
+            "state": "California",
+            "country":"US",
+            "pincode": 1400022
+        },
+        "email":"john.mckay@gmail.com",
+        "img":"",
+        "contact":"9849485545"
+    }, 
+    {
+        "userId":2,
+        "username":"Kristina",
+        "fullName":"Kristina McKay",
+        "address" :{
+            "street":"34 Wakanda Way",
+            "city":"Chula Vista",
+            "state": "California",
+            "country":"US",
+            "pincode": 5566022
+        },
+        "email":"kristina.mckay@gmail.com",
+        "img":"",
+        "contact":"42343434545"
+    }, 
+    {
+        "userId":3,
+        "username":"Brandon",
+        "fullName":"Brandon McKay",
+        "address" :{
+            "street":"301 This is the way",
+            "city":"Mandalore",
+            "state": "Mexico",
+            "country":"US",
+            "pincode": 8566022
+        },
+        "email":"brandon.mckay@gmail.com",
+        "img":"",
+        "contact":"3228434545"
+    },{
+        "userId":4,
+        "username":"Alex",
+        "fullName":"Alexandra McKay-Ali",
+        "address" :{
+            "street":"703 Wonderland Way",
+            "city":"Miami",
+            "state": "Florida",
+            "country":"US",
+            "pincode": 8566022
+        },
+        "email":"alex.mckay.ali@gmail.com",
+        "img":"",
+        "contact":"228434545"
+    },{
+        "userId":5,
+        "username":"Bryan",
+        "fullName":"Bryan McKay",
+        "address" :{
+            "street":"333 Supreme St SW",
+            "city":"Seattle",
+            "state": "WA",
+            "country":"US",
+            "pincode": 8566022
+        },
+        "email":"bryan.mckay@gmail.com",
+        "img":"",
+        "contact":"3431434545"
+    },{
+        "userId":6,
+        "username":"Zain",
+        "fullName":"Zain Ali",
+        "address" :{
+            "street":"703 Wonderland Way",
+            "city":"Seattle",
+            "state": "WA",
+            "country":"US",
+            "pincode": 8566022
+        },
+        "email":"zain.ali@gmail.com",
+        "img":"",
+        "contact":"2141843454"
+    }
+]
