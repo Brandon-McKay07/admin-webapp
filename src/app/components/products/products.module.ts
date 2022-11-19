@@ -4,6 +4,8 @@ import { ProductCreateComponent } from './product-create/product-create.componen
 import { ProductsComponent } from './products.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 
@@ -13,6 +15,8 @@ import { CommonModule } from '@angular/common';
     ProductCreateComponent,
     ProductViewComponent,
     ProductCategoriesComponent,
+    ProductDetailsComponent,
+    ProductListComponent,
   ],
   imports: [
     CommonModule

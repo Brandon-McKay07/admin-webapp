@@ -3,6 +3,7 @@ import { UserCreateComponent } from './user-create/user-create.component';
 import { UsersComponent } from './users.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 
 
@@ -11,6 +12,7 @@ import { CommonModule } from '@angular/common';
     UsersComponent,
     UserCreateComponent,
     UserViewComponent,
+    UserDetailComponent,
   ],
   imports: [
     CommonModule

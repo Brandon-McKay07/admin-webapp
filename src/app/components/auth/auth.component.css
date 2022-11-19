@@ -1,0 +1,14 @@
+#bg {
+    background: linear-gradient( to bottom right,  #0d6efd, black);
+}
+
+.form-group .input-group .input[type="text"]:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.card{
+    border: 3px solid rgba(0,0,0,.125);
+    border-radius: 0rem;
+    padding: 2em;
+}
