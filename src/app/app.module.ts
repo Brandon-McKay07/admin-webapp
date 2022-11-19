@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     SideNavbarComponent,
     MainComponent,
 
-    NotFoundComponent
+    NotFoundComponent,
+     AboutusComponent,
+     
+     ContactusComponent
   ],
   imports: [
     BrowserModule,
