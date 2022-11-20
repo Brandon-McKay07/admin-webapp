@@ -9,7 +9,7 @@ export class CategoriesService {
 
   constructor(private HttpClient: HttpClient) { }
 
-  getCategries(){
+  getCategories(){
     return this.HttpClient.get<any[]>('../../assets/json/categories.json')
   }
 }
