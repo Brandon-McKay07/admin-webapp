@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+json files are used to create the dummy data in the back-end
+
+services are used to comput edata across components
+Example:
+
+export class ProductsService {
+
+constructor(private HttpClient: HttpClient) { }
+
+getProducts(){
+return this.HttpClient.get<any[]>('../../assets/json/products.json')
+}
+}
