@@ -39,3 +39,28 @@ getProducts(){
 return this.HttpClient.get<any[]>('../../assets/json/products.json')
 }
 }
+
+services are then called using observable within the coresponding component.ts file for example products.services.ts would correspon with products.components.ts. That is where the observables are called...see bellow
+
+product observable:
+
+public prodObservable: Observable<any[]> = new Observable();
+
+Category Observable:
+public categoryObservable: Observable<any[]> = new Observable();
+
+in the corresponding HTML file the Observable is used and called within the code to generate the dummby data from the Json files
+
+this is with the use of the \*ngFor statement
+
+example:
+
+\*ngFor="let prod of prodObservable | async; index as idx
+
+this ^^ within the code allows the product observable to generaste the dummy data
+
+router link is used to call click commands within the code and helps make the pages dynamic for ecample
+
+[routerLink]="['./', 'categories']
+
+this can be called within a <button> tag to make the click affect generate the information within the /categories file path
