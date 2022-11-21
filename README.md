@@ -71,3 +71,4 @@ added
 
 to dependencies in package.json
 this helps with the use of model boxes
+/Users/brandonmckay/FrontEndWorkspace/admin-webapp/src/app/components/orders/orders.component.ts

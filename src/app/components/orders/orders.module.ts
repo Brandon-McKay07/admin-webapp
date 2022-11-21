@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { OrderTrackComponent } from './order-track/order-track.component';
 import { OrderViewComponent } from './order-view/order-view.component';
 import { OrderCreateComponent } from './order-create/order-create.component';
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
     OrderTrackComponent,
   ],
   imports: [
-    CommonModule,
+    CommonModule,RouterModule
     
   ]
 })

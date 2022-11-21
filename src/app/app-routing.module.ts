@@ -1,7 +1,7 @@
 import { OrderTrackComponent } from './components/orders/order-track/order-track.component';
 import { OrderViewComponent } from './components/orders/order-view/order-view.component';
 import { OrderCreateComponent } from './components/orders/order-create/order-create.component';
-import { OrdersComponent } from './../../../user-webapp/src/app/components/orders/orders.component';
+import { OrdersComponent } from './components/orders/orders.component';
 import { ProductDetailsComponent } from './components/products/product-details/product-details.component';
 import { ProductCategoriesComponent } from './components/products/product-categories/product-categories.component';
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
@@ -36,6 +36,7 @@ const routes: Routes = [
   ]},
   {path:'orders', children:[
 {path:'',component:OrdersComponent},
+
 {path:'create', component:OrderCreateComponent},
 {path:'view', component:OrderViewComponent},
 {path:'track', component:OrderTrackComponent}
