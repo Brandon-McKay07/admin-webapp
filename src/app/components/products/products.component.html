@@ -38,10 +38,10 @@
                                 <td>{{ prod["productCategory"]["categoryName"] }}</td>
                                 <td>{{ prod["price"] | currency:'USD':'symbol':'1.0' }}</td>
                                 <td>
-                                  <button type="button" class="btn btn-xs btn-success me-1 " (click)="openImageModal(viewImageModal, prod.images, prod.thumbnailImage)" >View Images</button>
-                                  <button type="button" class="btn btn-xs btn-primary me-1 " (click)="viewProductDetails(viewModal, prod)">View Details</button>
-                                  <button type="button" class="btn btn-xs btn-warning me-1 " (click)="openModal(productModal, prod)" >Update</button>
-                                  <button type="button" class="btn btn-xs btn-danger me-1 ">Delete</button>
+                                  <button type="button" class="btn btn-sm btn-success me-1 " (click)="openImageModal(viewImageModal, prod.images, prod.thumbnailImage)" >View Images</button>
+                                  <button type="button" class="btn btn-sm btn-primary me-1 " (click)="viewProductDetails(viewModal, prod)">View Details</button>
+                                  <button type="button" class="btn btn-md btn-warning me-1 " (click)="openModal(productModal, prod)" >Update</button>
+                                  <button type="button" class="btn btn-md btn-danger me-1 ">Delete</button>
                                   
                                 </td>
                               </tr>                       
