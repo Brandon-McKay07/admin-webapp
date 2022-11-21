@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProductsService } from 'src/app/services/products.service';
 import { CategoriesService } from 'src/app/services/categories.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-products',
@@ -15,7 +16,7 @@ export class ProductsComponent implements OnInit {
  public categoryObservable: Observable<any[]> = new Observable();
  
  
-  constructor(private productService: ProductsService, private categoriesService:CategoriesService){}
+  constructor(private productService: ProductsService, private modalService: NgbModal, private categoriesService:CategoriesService){}
 
 
   ngOnInit(): void {
