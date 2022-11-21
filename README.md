@@ -57,10 +57,17 @@ example:
 
 \*ngFor="let prod of prodObservable | async; index as idx
 
-this ^^ within the code allows the product observable to generaste the dummy data
+this ^^ within the code allows the product observable to generate the dummy data
 
 router link is used to call click commands within the code and helps make the pages dynamic for ecample
 
 [routerLink]="['./', 'categories']
 
 this can be called within a <button> tag to make the click affect generate the information within the /categories file path
+
+added
+
+    "@ng-bootstrap/ng-bootstrap": "13.1.1",
+
+to dependencies in package.json
+this helps with the use of model boxes
