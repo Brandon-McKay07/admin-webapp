@@ -1,6 +1,7 @@
 import { FormControl, FormGroup } from '@angular/forms';
-import { AdminService } from './../../services/admin.service';
+
 import { Component, OnInit } from '@angular/core';
+import { AdminService } from 'src/app/services/admin.service';
 
 @Component({
   selector: 'app-auth',
