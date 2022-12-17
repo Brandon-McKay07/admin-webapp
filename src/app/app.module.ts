@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { UsersModule } from './components/users/users.module';
 import { ProductsModule } from './components/products/products.module';
 import { OrdersModule } from './components/orders/orders.module';
@@ -42,6 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     OrdersModule,
     ProductsModule,
+    ReactiveFormsModule,
   
     UsersModule,
   ],
