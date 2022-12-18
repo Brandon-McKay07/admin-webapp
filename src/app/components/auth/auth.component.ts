@@ -26,7 +26,9 @@ export class AuthComponent implements OnInit {
       error:(error:any)=>console.log(error),
       complete:()=>console.log("completed")
     });
-    this.adminRef.reset(); //reset form value
+    console.log("Hi");
     
+    this.adminRef.reset(); //reset form value
+
   }
 }
