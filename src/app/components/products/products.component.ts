@@ -21,6 +21,7 @@ export class ProductsComponent implements OnInit {
  selectedImageIdx: number = 0;
   thumbnailImageIdx: number = 0;
   tempImageFiles: any[] = [];
+  tempImageFilesPath: any[] = [];
   updation: boolean = false;
   loader: boolean = false;
  
@@ -53,6 +54,7 @@ export class ProductsComponent implements OnInit {
         price: [null],
         images: this.fb.array([]),
         thumbnailImage: [null],
+        productCode:[null],
         productDescription: [null],
         productCategory: [null],
         active: [true],
@@ -65,6 +67,7 @@ export class ProductsComponent implements OnInit {
         productId: [productObj.productId],
         productTitle: [productObj.productTitle],
         price: [productObj.price],
+        productCode:[productObj.productCode],
         images: [productObj.images],
         thumbnailImage: [productObj.thumbnailImage],
         productDescription: [productObj.productDescription],
@@ -98,17 +101,36 @@ export class ProductsComponent implements OnInit {
     });
   }
 
+  //save product into db functionality using rest API
+  saveProduct(){
+    let productRef = this.productForm.value;
+    this.tempImageFilesPath.forEach((v,index)=>{
+      productRef.images[index]=v;
+    })
+    console.log(productRef);
+    this.productService.storeProduct(productRef).subscribe({
+      next:(result:any)=>console.log(result),
+      error:(error:any)=>console.log(error),
+      complete:()=>console.log("completed")
+      
+      
+      
+    })
+    
+    
+
+  }
   // open image
   openImage(url: string) {
     window.open(url, "_blank")
-  }
-
+  
+}
   // view product details
   viewProductDetails(modal: any, productObj: Products) {
     this.productModel = productObj;
     this.modalService.open(modal, { size: 'lg' });
+  
   }
-
 
   checkImageFileType(event: any) {
     let fileList: File[] = Object.assign([], event.target.files);
@@ -118,6 +140,13 @@ export class ProductsComponent implements OnInit {
         file.type == "image/jpeg" ||
         file.type == "image/jpg"
       ) {
+        let reader = new FileReader();
+        reader.readAsDataURL(event.target.files[0]);
+        reader.onload=(event)=>{
+          let path = (<FileReader>event.target).result;
+          //console.log(path);
+          this.tempImageFilesPath.push(path);
+        }
         this.tempImageFiles.push(file);
       } else {
         // this.toast.warning("Only .png/.jpeg/.jpg file format accepted!!", file.name + " will not accepted.");

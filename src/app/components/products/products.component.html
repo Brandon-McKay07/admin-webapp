@@ -84,7 +84,12 @@
             </div>
             <div class="form-group m-0 mb-2">
               <label for="price" class="text-sm">Price</label>
-              <input type="number" name="price" formControlName="price" class="form-control" placeholder="Price" min="1"
+              <input type="number" name="price" formControlName="price" class="form-control" placeholder="price" 
+                required>
+            </div>
+            <div class="form-group m-0 mb-2">
+              <label for="productCode" class="text-sm">Product code</label>
+              <input type="text" name="productCode" formControlName="productCode" class="form-control" placeholder="productCode" min="1"
                 required>
             </div>
             <div class="form-group m-0 mb-2">
@@ -157,7 +162,7 @@
         <button type="button" class="btn btn-default btn-sm" (click)="modal.dismiss('')">
           Cancel
         </button>
-        <button type="submit" class="btn btn-dark btn-sm" [disabled]="loader">
+        <button type="submit" class="btn btn-dark btn-sm" [disabled]="loader" (click)="saveProduct()">
           Save
           <span *ngIf="loader">&nbsp;</span>
           <div *ngIf="loader" class="spinner-border spinner-border-sm text-white" role="status">
