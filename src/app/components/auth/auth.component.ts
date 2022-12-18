@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 
 import { Component, OnInit } from '@angular/core';
@@ -14,7 +15,7 @@ export class AuthComponent implements OnInit {
     email: new FormControl(),
     password:new FormControl()
   });
-  constructor(public adminService:AdminService) { }
+  constructor(public adminService:AdminService, public router:Router) { }
 
   ngOnInit(): void {}
 
@@ -22,7 +23,15 @@ export class AuthComponent implements OnInit {
     let admin = this.adminRef.value;
     //console.log(admin);
     this.adminService.signIn(admin).subscribe({
-      next:(data:any)=>console.log(data),
+      next:(data:any)=>{
+        if(data=="success"){
+          this.adminService.logIn();
+          alert("logged in successfuly")
+          this.router.navigate(["home"]);
+        }else{
+          alert("login failed please try again")
+        }
+      },
       error:(error:any)=>console.log(error),
       complete:()=>console.log("completed")
     });

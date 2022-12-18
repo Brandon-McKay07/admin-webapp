@@ -8,6 +8,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div *ngIf="loggedIn">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
@@ -39,22 +40,30 @@
               <li><a class="dropdown-item" routerLink="users/detail">User Detals</a></li>
               </ul>
           </li>
-          <li class="nav-item dropdown">
+        
+          
+          
+        </ul>
+      </div>
+         <li class="nav-item dropdown navbar-nav me-auto mb-2 mb-lg-0">
             <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Portal
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" routerLink="/auth">Login</a></li>
-              <li><a class="dropdown-item" routerLink="#">Logout</a></li>
+              <div *ngIf="loggedIn">
+              <li><a class="dropdown-item" routerLink="#" (click)="logout()">Logout</a></li>
+            </div>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" routerLink="/contactus">Contact The Team</a></li>
             </ul>
           </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-primary bg-opacity-25" type="submit">Search</button>
-        </form>
+          <div *ngIf="loggedIn">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary bg-opacity-25" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </div>
   </nav>
