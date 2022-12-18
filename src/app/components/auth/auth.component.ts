@@ -20,6 +20,13 @@ export class AuthComponent implements OnInit {
 
   signIn(){
     let admin = this.adminRef.value;
-    console.log(admin);
+    //console.log(admin);
+    this.adminService.signIn(admin).subscribe({
+      next:(data:any)=>console.log(data),
+      error:(error:any)=>console.log(error),
+      complete:()=>console.log("completed")
+    });
+    this.adminRef.reset(); //reset form value
+    
   }
 }
