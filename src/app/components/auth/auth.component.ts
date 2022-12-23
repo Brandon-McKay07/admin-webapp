@@ -11,7 +11,7 @@ import { AdminService } from 'src/app/services/admin.service';
 })
 export class AuthComponent implements OnInit {
 
-  adminRef = new FormGroup({
+    adminRef = new FormGroup({
     email: new FormControl(),
     password:new FormControl()
   });
@@ -22,18 +22,13 @@ export class AuthComponent implements OnInit {
   signIn(){
     let admin = this.adminRef.value;
     //console.log(admin);
-    this.adminService.signIn(admin).subscribe({
-      next:(data:any)=>{
-        if(data=="success"){
-          this.adminService.logIn();
-          alert("logged in successfuly")
-          this.router.navigate(["home"]);
-        }else{
-          alert("login failed please try again")
-        }
-      },
-      error:(error:any)=>console.log(error),
-      complete:()=>console.log("completed")
+     this.adminService.signIn(admin).subscribe({
+     next:(data:any)=>console.log(data),
+     error:(error:any)=>console.log(error),
+     complete:()=>console.log("completed")
+     
+     
+     
     });
     console.log("Hi");
     
