@@ -50,7 +50,9 @@
               Admin Portal
             </a>
             <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDropdown">
+              <div *ngIf="!loggedIn">
               <li><a class="dropdown-item" routerLink="/auth">Login</a></li>
+            </div>
               <div *ngIf="loggedIn">
               <li><a class="dropdown-item" routerLink="#" (click)="logout()">Logout</a></li>
             </div>

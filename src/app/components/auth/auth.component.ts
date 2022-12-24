@@ -23,7 +23,11 @@ export class AuthComponent implements OnInit {
     let admin = this.adminRef.value;
     //console.log(admin);
      this.adminService.signIn(admin).subscribe({
-     next:(data:any)=>console.log(data),
+     next:(data:any)=>{
+      if (data=="success") {
+        this.adminService.logIn();
+      }
+     },
      error:(error:any)=>console.log(error),
      complete:()=>console.log("completed")
      
