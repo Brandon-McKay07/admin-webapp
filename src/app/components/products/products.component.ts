@@ -103,19 +103,21 @@ export class ProductsComponent implements OnInit {
 
   //save product into db functionality using rest API
   saveProduct(){
+    alert("Event Generated")
     let productRef = this.productForm.value;
-    this.tempImageFilesPath.forEach((v,index)=>{
-      productRef.images[index]=v;
-    })
+    // this.tempImageFilesPath.forEach((v,index)=>{
+    //   productRef.images[index]=v;
     console.log(productRef);
-    this.productService.storeProduct(productRef).subscribe({
-      next:(result:any)=>console.log(result),
-      error:(error:any)=>console.log(error),
-      complete:()=>console.log("completed")
+    // })
+    // console.log(productRef);
+    // this.productService.storeProduct(productRef).subscribe({
+    //   next:(result:any)=>console.log(result),
+    //   error:(error:any)=>console.log(error),
+    //   complete:()=>console.log("completed")
       
       
       
-    })
+    // })
     
     
 
