@@ -105,11 +105,11 @@ export class ProductsComponent implements OnInit {
   saveProduct(){
     alert("Event Generated")
     let productRef = this.productForm.value;
-    // this.tempImageFilesPath.forEach((v,index)=>{
-    //   productRef.images[index]=v;
-    console.log(productRef);
-    // })
-    // console.log(productRef);
+      this.tempImageFilesPath.forEach((v,index)=>{
+      productRef.images[index]=v;
+    
+    })
+     console.log(productRef);
     // this.productService.storeProduct(productRef).subscribe({
     //   next:(result:any)=>console.log(result),
     //   error:(error:any)=>console.log(error),
