@@ -26,6 +26,10 @@ export class AuthComponent implements OnInit {
      next:(data:any)=>{
       if (data=="success") {
         this.adminService.logIn();
+        alert("Successfully Logged in")
+        this.router.navigate(["home"]);
+      }else{
+        alert("Login not successfull, Please try again")
       }
      },
      error:(error:any)=>console.log(error),

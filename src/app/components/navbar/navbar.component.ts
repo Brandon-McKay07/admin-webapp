@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit{
-loggedIn:boolean = false;
+loggedIn?:boolean = false;
 
 
 constructor(public adminService:AdminService, public router:Router){
