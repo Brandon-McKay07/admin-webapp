@@ -16,7 +16,7 @@ export class AdminService {
   }
 
   get isLogged(){
-    return this.loggedIn; // we get false initially 
+    return this.loggedIn; // we get false initially because it's not logged in 
   }
 
   logIn(){
