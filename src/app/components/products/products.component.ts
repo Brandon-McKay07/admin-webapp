@@ -110,14 +110,13 @@ export class ProductsComponent implements OnInit {
     
     })
      console.log(productRef);
-    // this.productService.storeProduct(productRef).subscribe({
-    //   next:(result:any)=>console.log(result),
-    //   error:(error:any)=>console.log(error),
-    //   complete:()=>console.log("completed")
-      
-      
-      
-    // })
+     this.productService.storeProduct(productRef).subscribe({
+      next:(result:any)=>console.log(result),
+       error:(error:any)=>console.log(error),
+      complete:()=>console.log("completed")
+    })
+    this.tempImageFiles.splice(0,this.tempImageFiles.length);
+    this.productForm.reset();
     
     
 
@@ -164,7 +163,7 @@ export class ProductsComponent implements OnInit {
   changeThumbnailImageIdx(idx: number) {
     this.productForm.patchValue({
       thumbnailImage: idx
-    })
+    });
   }
 
 
