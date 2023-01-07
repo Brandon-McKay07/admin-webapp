@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import{ HttpClient } from '@angular/common/http'
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -11,5 +12,9 @@ export class CategoriesService {
 
   getCategories(){
     return this.HttpClient.get<any[]>('../../assets/json/categories.json')
+  }
+  storeCategoriesDetails(category:any):Observable<string>{
+    return this.HttpClient.post("",category,{responseType:'text'});
+
   }
 }

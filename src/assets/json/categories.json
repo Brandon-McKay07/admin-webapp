@@ -14,5 +14,13 @@
         "categoryImageUrl": "",
         "active": false,
         "addedOn": "11 August 2020"
+      },{
+        "categoryId": 3,
+        "categoryName": "Furniture",
+        "categoryDescription": "Furniture e-commerce sales are provided by segment (upholstered furniture, outdoor furniture, office furniture, kitchen furniture, other furniture), by region and by distributor",
+        "categoryImageUrl": "",
+        "active": false,
+        "addedOn": "11 August 2020"
       }
+
 ]

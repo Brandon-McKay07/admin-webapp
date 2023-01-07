@@ -1,3 +1,4 @@
+import { Category } from './../products.component';
 
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
@@ -62,7 +63,10 @@ initialForm(productCategoryObj: any = null) {
 }
 
 addCategory(){
-  alert("event fired")
+  //alert("event fired")
+  let categoryRef = this.productCategoryForm.value;
+  console.log(categoryRef);
+  
 }
 checkFileType(event: any) {
   this.tempFile = event.target.files[0];
@@ -71,13 +75,29 @@ checkFileType(event: any) {
     this.tempFile.type == "image/jpeg" ||
     this.tempFile.type == "image/jpg"
   ) {
-    // console.log("File Ok");
+    let reader = new FileReader();
+        reader.readAsDataURL(event.target.files[0]);
+        reader.onload=(event)=>{
+          let path = (<FileReader>event.target).result;
+          this.tempFile=path;
+        
+        }
+       
   } else {
     // console.log("File not Ok");
     this.tempFile = null;
     // this.toast.show("Only .png/.jpeg/.jpg file format accepted!!");
   }
 }
+
+saveCategory(){
+  let categoryRef =this.productCategoryForm.value;
+  categoryRef.categoryImageUrl=this.tempFile;
+  alert(categoryRef);
+  console.log(categoryRef);
+  
+}
+
 
 }
 
