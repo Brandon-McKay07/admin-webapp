@@ -61,7 +61,9 @@ initialForm(productCategoryObj: any = null) {
   }
 }
 
-
+addCategory(){
+  alert("event fired")
+}
 checkFileType(event: any) {
   this.tempFile = event.target.files[0];
   if (
