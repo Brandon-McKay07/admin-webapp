@@ -94,8 +94,18 @@ saveCategory(){
   let categoryRef =this.productCategoryForm.value;
   categoryRef.categoryImageUrl=this.tempFile;
   alert(categoryRef);
-  console.log(categoryRef);
-  
+  //console.log(categoryRef);
+  this.CategoriesService.storeCategoriesDetails(categoryRef).subscribe({
+    next:(result:any)=>{
+      console.log(result);
+      },
+      error:(error:any)=>console.log(error),
+      complete:()=>console.log("completed")
+      
+      
+  });
+  this.productCategoryForm.reset();
+  categoryRef.categoryImageUrl="";
 }
 
 

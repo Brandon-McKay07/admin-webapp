@@ -14,7 +14,7 @@ export class CategoriesService {
     return this.HttpClient.get<any[]>('../../assets/json/categories.json')
   }
   storeCategoriesDetails(category:any):Observable<string>{
-    return this.HttpClient.post("",category,{responseType:'text'});
+    return this.HttpClient.post("// http://localhost:9090/categories/storeCategories",category,{responseType:'text'});
 
   }
 }
