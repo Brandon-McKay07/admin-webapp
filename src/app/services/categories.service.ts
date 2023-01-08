@@ -7,14 +7,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CategoriesService {
+  storeCategories(categoryRef: any) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private HttpClient: HttpClient) { }
 
   getCategories(){
-    return this.HttpClient.get<any[]>('../../assets/json/categories.json')
+    return this.HttpClient.get<any[]>('http://localhost:9090/categories/findCategories')
   }
   storeCategoriesDetails(category:any):Observable<string>{
-    return this.HttpClient.post("// http://localhost:9090/categories/storeCategories",category,{responseType:'text'});
+    return this.HttpClient.post("http://localhost:9090/categories/storeCategories",category,{responseType:'text'});
 
   }
 }

@@ -34,7 +34,7 @@
                                 <h5><span class="badge rounded-pill {{ cat['active'] ? 'bg-success' : 'bg-warning' }}">{{ cat['active'] ? "Active" : "Inactive" }}</span></h5>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-sm btn-dark me-1 mb-1" [disabled]="cat['categoryImageUrl'] === ''">View Image</button>
+                                <button type="button" class="btn btn-sm btn-dark me-1 mb-1" [disabled]="cat['categoryImageUrl'] === ''" (click)="ViewCategory()">View Image</button>
                                 <button type="button" class="btn btn-sm btn-dark me-1 mb-1" (click)="openProductCategoryDialog(prodCategoryModal, cat)" >Update</button>
                                 <button type="button" class="btn btn-sm btn-danger me-1 mb-1">Delete</button>
                             </td>

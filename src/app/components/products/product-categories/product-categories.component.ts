@@ -1,8 +1,9 @@
-import { Category } from './../products.component';
+import { CategoriesService } from 'src/app/services/categories.service';
+
 
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
-import { CategoriesService } from 'src/app/services/categories.service';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -23,12 +24,12 @@ export class ProductCategoriesComponent implements OnInit {
 
 
 
-constructor(private CategoriesService:CategoriesService, private modalService: NgbModal, private fb:FormBuilder){}
+constructor(private categoriesService:CategoriesService, private modalService: NgbModal, private fb:FormBuilder){}
 
 
 ngOnInit(): void{
   
-  this.categoryObservable = this.CategoriesService.getCategories();
+  this.categoryObservable = this.categoriesService.getCategories();
 
 
 
@@ -39,6 +40,10 @@ openProductCategoryDialog(modelRef:any, productCategoryObj = null) {
   // console.log(productCategoryObj);    
   this.initialForm(productCategoryObj);
   this.modalService.open(modelRef);
+}
+
+ViewCategory(){
+  alert("View Category")
 }
 
 initialForm(productCategoryObj: any = null) {
@@ -90,24 +95,20 @@ checkFileType(event: any) {
   }
 }
 
-saveCategory(){
-  let categoryRef =this.productCategoryForm.value;
+saveCategory() {
+  let categoryRef = this.productCategoryForm.value;
   categoryRef.categoryImageUrl=this.tempFile;
-  alert(categoryRef);
   //console.log(categoryRef);
-  this.CategoriesService.storeCategoriesDetails(categoryRef).subscribe({
-    next:(result:any)=>{
-      console.log(result);
-      },
-      error:(error:any)=>console.log(error),
-      complete:()=>console.log("completed")
-      
-      
+  this.categoriesService.storeCategoriesDetails(categoryRef).subscribe({
+    next:(result:any)=> {
+      console.log(result)
+    },
+    error:(error:any)=>console.log(error),
+    complete:()=>console.log("completed")
   });
   this.productCategoryForm.reset();
   categoryRef.categoryImageUrl="";
 }
-
 
 }
 
