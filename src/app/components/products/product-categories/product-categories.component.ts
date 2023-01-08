@@ -42,8 +42,14 @@ openProductCategoryDialog(modelRef:any, productCategoryObj = null) {
   this.modalService.open(modelRef);
 }
 
-ViewCategory(){
-  alert("View Category")
+ // View Categories Details 
+ openImageModal(modal: any, imageUrls: string):void {
+  this.tempFile = imageUrls;
+  //this.thumbnailImageIdx = thumbnailImageIdx;
+  this.modalService.open(modal, { 
+    size: "xl",
+    scrollable: true 
+  });
 }
 
 initialForm(productCategoryObj: any = null) {
