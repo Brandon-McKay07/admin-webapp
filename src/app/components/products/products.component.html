@@ -41,7 +41,7 @@
                                   <button type="button" class="btn btn-sm btn-success me-1 " (click)="openImageModal(viewImageModal, prod.images, prod.thumbnailImage)" >View Images</button>
                                   <button type="button" class="btn btn-sm btn-primary me-1 " (click)="viewProductDetails(viewModal, prod)">View Details</button>
                                   <button type="button" class="btn btn-md btn-warning me-1 " (click)="openModal(productModal, prod)" >Update</button>
-                                  <button type="button" class="btn btn-md btn-danger me-1 ">Delete</button>
+                                  <button type="button" class="btn btn-md btn-danger me-1 "  (click)="deleteProduct(prod.productId)">Delete</button>
                                   
                                 </td>
                               </tr>                       

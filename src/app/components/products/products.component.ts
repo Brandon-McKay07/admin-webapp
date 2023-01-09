@@ -103,7 +103,7 @@ export class ProductsComponent implements OnInit {
 
   //save product into db functionality using rest API
   saveProduct(){
-    alert("Event Generated")
+    alert("Product Added Successfully")
     let productRef = this.productForm.value;
       this.tempImageFilesPath.forEach((v,index)=>{
       productRef.images[index]=v;
@@ -155,6 +155,11 @@ export class ProductsComponent implements OnInit {
     });
   }
 
+
+  deleteProduct(productId:any){
+    alert(productId)
+
+  }
 
   removeImage(idx: number) {
     this.tempImageFiles.splice(idx, 1);
