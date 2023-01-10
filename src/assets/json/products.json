@@ -1,55 +1,110 @@
 [
-  {
-      "productId": 1,
-      "productTitle": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-      "productDescription": "Easy upgrade for faster boot up, shutdown, application load and response",
-      "productCategory": {
-        "categoryId": 1,
-        "categoryName": "Electronics",
-        "categoryDescription": "",
-        "categoryImageUrl": "",
-        "active": true,
-        "addedOn": "10 August 2020"
-      },
-      "productCode": "PRD-ELE-1054",
-      "images": [
-        "https://m.media-amazon.com/images/I/71J4Q8zM72L._SX466_.jpg",
-        "https://m.media-amazon.com/images/I/71J4Q8zM72L._SX679_.jpg",
-        "https://m.media-amazon.com/images/I/71J4Q8zM72L._SX355_.jpg",
-        "https://m.media-amazon.com/images/I/71J4Q8zM72L._SX522_.jpg",
-        "https://m.media-amazon.com/images/I/71J4Q8zM72L._SX450_.jpg",
-        "https://m.media-amazon.com/images/I/71J4Q8zM72L._SX425_.jpg",
-        "https://m.media-amazon.com/images/I/71J4Q8zM72L._SX569_.jpg"
-      ],
-      "thumbnailImage": 0,
-      "price": 300,
-      "addedOn": "30 November 2021",
-      "rating": 4
-  }, {
-      "productId": 2,
-      "productTitle": "HP DeskJet 2755e Wireless Color All-in-One Printer",
-      "productDescription": "Network-Ready, Energy Star Certified, Decal-Printing, Cloud Print Enabled",
-      "productCategory": {
-        "categoryId": 1,
-        "categoryName": "Electronics",
-        "categoryDescription": "",
-        "categoryImageUrl": "",
-        "active": true,
-        "addedOn": "10 August 2020"
-      },
-      "productCode": "PRI-ELE-1054",
-      "images": [
-        "https://m.media-amazon.com/images/I/61UdeL7aO-L._AC_SX679_.jpg",
-        "https://m.media-amazon.com/images/I/61UdeL7aO-L._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/61UdeL7aO-L._AC_SX679_.jpg",
-        "https://m.media-amazon.com/images/I/61UdeL7aO-L._AC_SX569_.jpg",
-        "https://m.media-amazon.com/images/I/61UdeL7aO-L._AC_SX569_.jpg",
-        "https://m.media-amazon.com/images/I/61UdeL7aO-L._AC_SX569_.jpg",
-        "https://m.media-amazon.com/images/I/61UdeL7aO-L._AC_SX569_.jpg"
-      ],
-      "thumbnailImage": 0,
-      "price": 8900,
-      "addedOn": "01 November 2021",
-      "rating": 4.5
-  }
+    {
+        "productId": 1,
+        "productTitle": "Holy Stone HS440 Foldable FPV Drone",
+        "productDescription": "1080P WiFi Camera for Adult Beginners and Kids; Voice/Gesture Control RC Quadcopter with Modular Battery for long flight time, Auto Hover, Carrying Case",
+        "productCategory": {
+          "categoryId": 1,
+          "categoryName": "Electronics",
+          "categoryDescription": "",
+          "categoryImageUrl": "",
+          "active": true,
+          "addedOn": "2022 11 02"
+        },
+        "productCode": "PRD-ELE-1054",
+        "images": [
+          "https://m.media-amazon.com/images/I/711WeAkyhCL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71uuUgAFrbL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71qxeQzBfrL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71+cCgu8XaL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71De7saRcaL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71gB3SHy2YL._AC_SL1500_.jpg"
+          
+        ],
+        "thumbnailImage": 0,
+        "price": 300,
+        "addedOn": "2022 08 01",
+        "rating": 4.3
+    }, {
+        "productId": 2,
+        "productTitle": "Meta Quest 2 ",
+        "productDescription": "Advanced All-In-One Virtual Reality Headset — 128 GB",
+        "productCategory": {
+          "categoryId": 1,
+          "categoryName": "Electronics",
+          "categoryDescription": "",
+          "categoryImageUrl": "",
+          "active": true,
+          "addedOn": "2022 11 10"
+        },
+        "productCode": "PRI-ELE-1032",
+        "images": [
+          "https://m.media-amazon.com/images/I/618PlE1DM8L._SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/61QQghZIg6L._SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71W5iN7Z7UL._SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/81XXIaO3DgL._SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71unPYTHa5L._SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/61PI+17ehdL._SL1500_.jpg"
+          
+        ],
+        "thumbnailImage": 0,
+        "price": 399,
+        "addedOn": "2021 10 01",
+        "rating": 4
+    },{
+        "productId": 3,
+        "productTitle": "Google Pixel Buds Pro ",
+        "productDescription": "Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case",
+        "productCategory": {
+          "categoryId": 1,
+          "categoryName": "Electronics",
+          "categoryDescription": "",
+          "categoryImageUrl": "",
+          "active": true,
+          "addedOn": "2022 12 10"
+        },
+        "productCode": "PRI-GGL-1033",
+        "images": [
+          "https://m.media-amazon.com/images/I/61JWmBV95jL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71Zf5Rcz9NL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/81yK8cWMtcL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/817diUm+xJL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/8107slUrO6L._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/61tZA1XGuzL._AC_SL1500_.jpg"
+          
+        ],
+        "thumbnailImage": 0,
+        "price": 149,
+        "addedOn": "2021 10 01",
+        "rating": 4.5
+    },{
+        "productId": 4,
+        "productTitle": "2021 Apple 11-inch iPad Pro",
+        "productDescription": "Space Grey",
+        "productCategory": {
+          "categoryId": 1,
+          "categoryName": "Electronics",
+          "categoryDescription": "",
+          "categoryImageUrl": "",
+          "active": true,
+          "addedOn": "10 September 2022"
+        },
+        "productCode": "PRI-APL-1036",
+        "images": [
+          "https://m.media-amazon.com/images/I/81Y5WuARqpS._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71IBJaDNl0S._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/81G35xZ-d1S._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/816WH7-GCTS._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71kEjkD8YpS._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/61D0JLi+q3S._AC_SL1500_.jpg"
+          
+        ],
+        "thumbnailImage": 0,
+        "price": 8900,
+        "addedOn": "2022 10 01",
+        "rating": 9
+    }
 ]
+
+
+ 
