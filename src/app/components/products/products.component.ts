@@ -157,7 +157,15 @@ export class ProductsComponent implements OnInit {
 
 
   deleteProduct(productId:any){
-    alert(productId)
+    //alert(productId)
+    this.productService.deleteProduct(productId).subscribe({
+      next:(data:any)=> {
+            alert(data);
+      },
+      error:(error:any)=> console.log(error),
+      complete:()=>console.log("completed")
+    
+    })
 
   }
 
